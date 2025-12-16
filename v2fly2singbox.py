@@ -89,7 +89,7 @@ if __name__ == "__main__":
     
     for filename in initial_files_list:
         # 为每个文件创建一个独立的输出名
-        output_file_name = f"{filename}.srs"
+        output_file_name = f"{filename}.json"
         
         # 1. 处理当前规则列表及其包含的所有子规则
         domain_suffix, domain = process_files(initial_files=[filename], base_path=base_dir)
@@ -104,4 +104,5 @@ if __name__ == "__main__":
     print(f"All done. Total files generated: {generated_files.__len__()}.")
     print(f"Generated file names: {', '.join(generated_files)}")
     print(f"Ensure these files are added to .github/workflows/run_converter.yml for committing.")
+
 
