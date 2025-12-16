@@ -47,4 +47,4 @@ jobs:
           # 更新提交信息
           commit_message: '🤖 Auto: Update individual sing-box rules'
           # [修正点] 使用通配符提交所有生成的 .json 文件
-          file_pattern: '*.srs'
+          file_pattern: '*.json'
