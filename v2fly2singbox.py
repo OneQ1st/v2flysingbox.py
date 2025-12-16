@@ -2,12 +2,12 @@ import os
 import json
 
 # 设置
-initial_files_list = ['google'] #要处理的规则列表
-base_dir = 'domain-list-community/data/' #规则文件所在目录
-output_file = 'google.json' #输出文件名
-version =3
+# [修正点 1] 定义要处理的规则列表
+initial_files_list = ['google', 'geolocation-!cn'] 
+base_dir = 'domain-list-community/data/' # 规则文件所在目录
+version = 3 # Sing-box 规则版本
 
-
+# --- 辅助函数：保持不变 ---
 
 def clean_content(content):
     space_index = content.find(' ')
@@ -17,6 +17,7 @@ def clean_content(content):
         return content.strip()
 
 def process_files(initial_files, base_path):
+    # 此函数逻辑保持不变，但每次调用只传入一个主文件
     files_to_process = list(initial_files)
     processed_files = set(initial_files)
     domain_suffix = [] 
@@ -63,7 +64,7 @@ def process_files(initial_files, base_path):
             
     return domain_suffix, domain
 
-def write_to_json(domain_suffix, domain, output_filename="output.json"):
+def write_to_json(domain_suffix, domain, output_filename):
     rule={
         "domain": domain,
         "domain_suffix": domain_suffix
@@ -81,10 +82,25 @@ def write_to_json(domain_suffix, domain, output_filename="output.json"):
         print(f"!!! ERROR WRITE FILE {output_filename} OCCURS {e}")
 
 
+# --- 主执行逻辑：改为循环处理 ---
 
 if __name__ == "__main__":
-    domain_suffix, domain = process_files(initial_files_list, base_path=base_dir)
-    write_to_json(domain_suffix, domain, output_file)
-    print(f"All done.")
-    print(f"Domain_suffix: {domain_suffix.__len__()}.")
-    print(f"Domain:        {domain.__len__()}.")
+    generated_files = []
+    
+    for filename in initial_files_list:
+        # 为每个文件创建一个独立的输出名
+        output_file_name = f"{filename}.json"
+        
+        # 1. 处理当前规则列表及其包含的所有子规则
+        domain_suffix, domain = process_files(initial_files=[filename], base_path=base_dir)
+        
+        # 2. 将结果写入独立的 JSON 文件
+        write_to_json(domain_suffix, domain, output_file_name)
+        
+        generated_files.append(output_file_name)
+        
+        print(f"\n--- {output_file_name} generation complete ---\n")
+    
+    print(f"All done. Total files generated: {generated_files.__len__()}.")
+    print(f"Generated file names: {', '.join(generated_files)}")
+    print(f"Ensure these files are added to .github/workflows/run_converter.yml for committing.")
