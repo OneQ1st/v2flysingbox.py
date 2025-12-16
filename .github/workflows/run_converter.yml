@@ -49,8 +49,8 @@ jobs:
           # 指定只下载 data/ 目录的内容
           git sparse-checkout set data/
           
-          # 更新 sparse-checkout，正式下载 data 目录内容
-          git pull origin main
+          # [修正点] 将 main 改为 master
+          git pull origin master
 
           # 返回脚本运行目录
           cd ..
