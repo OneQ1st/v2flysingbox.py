@@ -3,11 +3,10 @@ name: 自动生成 Sing-box JSON 和 SRS 规则
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [ main ]
   schedule:
     - cron: '0 2 * * *'
-  
+
 jobs:
   convert_and_commit:
     runs-on: ubuntu-latest
@@ -17,45 +16,44 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          sparse-checkout: |
-            v2fly2singbox.py
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      # 安装 Sing-box (用于将 JSON 转换为 SRS)
+      # 关键步骤：手动安装 sing-box 以修复 Exit Code 127
       - name: Install Sing-box
         run: |
-          bash <(curl -Ls https://raw.githubusercontent.com/SagerNet/sing-box/main/install.sh)
+          # 获取最新版链接并下载二进制文件
+          SB_VERSION=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases/latest | jq -r .tag_name | sed 's/v//')
+          curl -Lo sing-box.tar.gz https://github.com/SagerNet/sing-box/releases/download/v${SB_VERSION}/sing-box-${SB_VERSION}-linux-amd64.tar.gz
+          tar -xzf sing-box.tar.gz
+          # 将解压出的二进制文件移动到系统路径
+          sudo mv sing-box-*/sing-box /usr/local/bin/
+          sing-box version
 
       - name: Clone domain-list-community data
         run: |
-          git clone --depth 1 --filter=blob:none --sparse https://github.com/v2fly/domain-list-community.git
-          cd domain-list-community
-          git sparse-checkout set data/
-          git pull origin master
-          cd ..
+          git clone --depth 1 https://github.com/v2fly/domain-list-community.git
+          # 脚本中 base_dir 指向这个位置
+          mv domain-list-community/data ./data_src
+          # 修正脚本中的路径引用
+          sed -i "s|base_dir = 'domain-list-community/data/'|base_dir = './data_src/'|g" v2fly2singbox.py
 
-      # 第一步：运行 Python 生成所有独立的 JSON 文件
       - name: Run Python Converter
         run: python v2fly2singbox.py
         
-      # 第二步：使用 Sing-box 官方命令将所有 JSON 转换为二进制 SRS
+      # 批量将生成的 JSON 编译为二进制 SRS
       - name: Compile JSON to SRS
         run: |
           for f in *.json; do
-            [ -e "$f" ] || continue
-            echo "Compiling $f to ${f%.json}.srs ..."
+            echo "Compiling $f ..."
             sing-box rule-set compile "$f"
           done
 
-      # 第三步：提交所有 JSON 和 SRS 文件
       - name: Commit generated files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: '🤖 Auto: Update Sing-box JSON & SRS rules'
-          # 同时保存两种格式，方便不同需求
           file_pattern: '*.json *.srs'
