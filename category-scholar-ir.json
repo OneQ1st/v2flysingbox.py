@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "ac.ir",
+                "edu.ir",
+                "iau.ac.ir",
+                "iranlms.ir",
+                "jtt.ir",
+                "sanjesh.org",
+                "sharif.edu",
+                "sharif.ir",
+                "srttu.edu"
+            ]
+        }
+    ]
+}

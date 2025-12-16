@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "gannett-cdn.com",
+                "gannett.com",
+                "gannettdigital.com",
+                "usatoday.com",
+                "usatodaynetworkservice.com"
+            ]
+        }
+    ]
+}

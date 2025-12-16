@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "browser.events.data.msn.cn",
+                "browser.events.data.msn.com",
+                "clarity.ms",
+                "microsoftads.com",
+                "msads.net",
+                "nelreports.net"
+            ]
+        }
+    ]
+}

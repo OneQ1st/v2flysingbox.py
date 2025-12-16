@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "djreprints.com",
+                "dowjones.com",
+                "dowjones.io",
+                "dowjoneson.com"
+            ]
+        }
+    ]
+}

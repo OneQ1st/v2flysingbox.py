@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "kino.pub",
+                "kinopub.online",
+                "gfw.ovh",
+                "mos-gorsud.co"
+            ]
+        }
+    ]
+}

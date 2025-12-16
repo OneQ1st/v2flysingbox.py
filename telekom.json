@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "telekom.com",
+                "telekom.de",
+                "telesec.de"
+            ]
+        }
+    ]
+}

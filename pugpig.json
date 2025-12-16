@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "pugpig-dev.com",
+                "pugpig-stage.com",
+                "pugpig.com"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "akikocorp.cn",
+                "emoriko.com",
+                "sukasuka.cn"
+            ]
+        }
+    ]
+}

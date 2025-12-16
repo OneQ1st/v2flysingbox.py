@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "feng.com",
+                "fengimg.com",
+                "wfdata.club"
+            ]
+        }
+    ]
+}

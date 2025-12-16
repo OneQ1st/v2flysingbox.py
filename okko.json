@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "playfamily.ru",
+                "okko.sport",
+                "okko.tv"
+            ]
+        }
+    ]
+}

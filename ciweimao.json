@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "ciweimao.com",
+                "hbooker.com",
+                "kuangxiangit.com"
+            ]
+        }
+    ]
+}

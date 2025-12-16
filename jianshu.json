@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "jianshu.com",
+                "jianshu.io",
+                "jianshuapi.com"
+            ]
+        }
+    ]
+}

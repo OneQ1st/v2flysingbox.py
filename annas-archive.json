@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "annas-archive.li",
+                "annas-archive.org",
+                "annas-archive.se"
+            ]
+        }
+    ]
+}

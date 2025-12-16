@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "c-span.org",
+                "c-spanvideo.org"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "atom-data.io",
+                "analytics-data.io",
+                "ironbeast.io"
+            ]
+        }
+    ]
+}

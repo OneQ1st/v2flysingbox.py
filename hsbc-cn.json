@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "hsbc.com.cn",
+                "hsbcqh.com.cn",
+                "hsbcinsurance.com.cn"
+            ]
+        }
+    ]
+}

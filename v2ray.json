@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "v2ray.com",
+                "v2ray.cool",
+                "v2fly.org"
+            ]
+        }
+    ]
+}

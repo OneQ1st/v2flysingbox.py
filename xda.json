@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "xda-cdn.com",
+                "xda-developers.com",
+                "xdaforums.com",
+                "xdaimages.com"
+            ]
+        }
+    ]
+}

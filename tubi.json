@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "tubi.io",
+                "tubi.tv",
+                "tubi.video",
+                "tubitv.com"
+            ]
+        }
+    ]
+}

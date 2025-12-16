@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "borneo.world",
+                "borneoasia.com",
+                "borneoschematic.com",
+                "bosharso.net",
+                "hostborneo.org"
+            ]
+        }
+    ]
+}

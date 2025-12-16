@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "cmcm.com",
+                "cmcmcdn.com",
+                "liebao.cn",
+                "duba.com",
+                "duba.net",
+                "ijinshan.com"
+            ]
+        }
+    ]
+}

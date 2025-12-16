@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "yfcache.com",
+                "yfcalc.com",
+                "yfcdn.net",
+                "yfcloud.com",
+                "yfdts.net",
+                "yfp2p.net",
+                "yfscdn.net",
+                "yunfancdn.com"
+            ]
+        }
+    ]
+}

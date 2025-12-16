@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "mystrikingly.com",
+                "strikingly.com",
+                "strikinglycdn.com"
+            ]
+        }
+    ]
+}

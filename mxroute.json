@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "mxlogin.com",
+                "mxroute.com",
+                "mxroutedocs.com",
+                "mxroutehelp.com",
+                "mxrouting.net"
+            ]
+        }
+    ]
+}

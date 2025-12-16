@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "cnbeta.com",
+                "cnbeta.com.tw",
+                "cnbetacdn.com"
+            ]
+        }
+    ]
+}

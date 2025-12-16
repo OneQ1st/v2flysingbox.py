@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "x18r.co",
+                "x18r.com",
+                "z18r.co",
+                "z18r.com"
+            ]
+        }
+    ]
+}

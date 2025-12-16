@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "banmaaike.com",
+                "xiaoyuankousuan.com",
+                "ybccode.com",
+                "yuanfudao.com",
+                "yuansouti.com",
+                "yuantiku.com",
+                "fbstatic.cn",
+                "fenbi.com",
+                "fenbike.cn",
+                "fenbike.com",
+                "fenbilantian.cn",
+                "fenbilantian.com"
+            ]
+        }
+    ]
+}

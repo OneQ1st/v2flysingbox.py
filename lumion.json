@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "lumion-la.com",
+                "lumion.com",
+                "lumion3d.com.my",
+                "lumion3d.net",
+                "lumiontech.net",
+                "mylumion.com"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "futuesop.com",
+                "futufin.com",
+                "futuhk.com",
+                "futuhn.com",
+                "futuholdings.com",
+                "futuniuniu.com",
+                "futunn.com",
+                "futustatic.com",
+                "moomoo.com",
+                "moomooequity.com",
+                "moomootrustee.com"
+            ]
+        }
+    ]
+}

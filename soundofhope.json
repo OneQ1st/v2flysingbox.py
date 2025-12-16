@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "bayvoice.net",
+                "ozvoice.org",
+                "sohcradio.com",
+                "sohfrance.org",
+                "soundofhope.eu",
+                "soundofhope.kr",
+                "soundofhope.org",
+                "wanokokorosoh.com"
+            ]
+        }
+    ]
+}

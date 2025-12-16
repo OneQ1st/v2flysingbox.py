@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "collector.github.com",
+                "copilot-telemetry.githubusercontent.com"
+            ]
+        }
+    ]
+}

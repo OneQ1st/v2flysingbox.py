@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "cursor-cdn.com",
+                "cursor.com",
+                "cursor.sh",
+                "cursorapi.com"
+            ]
+        }
+    ]
+}

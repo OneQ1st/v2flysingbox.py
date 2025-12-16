@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "walmart",
+                "w-mt.co",
+                "wal-mart.com",
+                "wal.co",
+                "walmart-content.com",
+                "walmart.cn",
+                "walmart.com",
+                "walmart.pharmacy",
+                "walmartimages.com",
+                "wmt.co"
+            ]
+        }
+    ]
+}

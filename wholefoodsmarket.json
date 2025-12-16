@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "wfm.com",
+                "wholecitiesfoundation.org",
+                "wholefoods.com",
+                "wholefoodsmarket.co.uk",
+                "wholefoodsmarket.com",
+                "wholekidsfoundation.org",
+                "wholeplanetfoundation.org"
+            ]
+        }
+    ]
+}

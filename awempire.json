@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "awempire.com",
+                "dditsadn.com",
+                "dditscdn.com",
+                "docleradn.com",
+                "doclercdn.com"
+            ]
+        }
+    ]
+}

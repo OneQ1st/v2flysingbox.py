@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "log-upload-os.hoyoverse.com",
+                "log-upload.mihoyo.com"
+            ]
+        }
+    ]
+}

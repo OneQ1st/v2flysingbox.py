@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "corel.com",
+                "corel.net",
+                "coreldraw.app",
+                "coreldraw.com",
+                "corelstore.com"
+            ]
+        }
+    ]
+}

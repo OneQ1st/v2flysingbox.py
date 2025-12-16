@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "rules": [
+        {
+            "domain": [],
+            "domain_suffix": [
+                "chatwhores.com",
+                "chatwhores.net",
+                "chatwhores.org",
+                "chatwhores.sex",
+                "chatwhores.tv"
+            ]
+        }
+    ]
+}
