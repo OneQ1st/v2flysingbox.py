@@ -29,12 +29,6 @@
                 "who.int",
                 "wi-fi.org",
                 "wto.org",
-                "archive-it.org",
-                "archive.md",
-                "archive.org",
-                "archive.ph",
-                "archive.today",
-                "openlibrary.org",
                 "ccstatic.org",
                 "creativecommons.org",
                 "creativecommons.engineering",
@@ -124,9 +118,7 @@
                 "paskoocheh.com",
                 "ppy.sh",
                 "rolfoundation.org",
-                "rolsociety.org",
-                "4pcdn.org",
-                "4plebs.org"
+                "rolsociety.org"
             ]
         }
     ]
