@@ -495,7 +495,8 @@
                 "edge.steam-dns.top.comcast.net"
             ],
             "domain_suffix": [
-                "egdownload.fastly-edge.com"
+                "egdownload.fastly-edge.com",
+                "domain:dl.playstation.net"
             ]
         }
     ]
